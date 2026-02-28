@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawHome | Volunteer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="volunteer">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">PetHome</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="volunteer.html" class="active">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h1>Volunteer Application</h1>
+      <form id="volunteerForm" class="form-grid" novalidate>
+        <div>
+          <label for="volName">Full Name</label>
+          <input id="volName" name="fullName" type="text" required />
+        </div>
+        <div>
+          <label for="volEmail">Email</label>
+          <input id="volEmail" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="volPhone">Phone</label>
+          <input id="volPhone" name="phone" type="tel" required />
+        </div>
+        <div class="full-width">
+          <label for="volHelp">How would you like to help?</label>
+          <textarea id="volHelp" name="helpType" required></textarea>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+      <p id="volunteerMessage" class="form-message" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>© 2026 PawHome</p></div></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
