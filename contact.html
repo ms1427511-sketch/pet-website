@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawHome | Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">PawHome</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h1>Contact PawHome</h1>
+      <div class="contact-layout">
+        <form id="contactForm" class="form-grid" novalidate>
+          <div>
+            <label for="contactName">Full Name</label>
+            <input id="contactName" name="fullName" type="text" required />
+          </div>
+          <div>
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" required />
+          </div>
+          <div class="full-width">
+            <label for="contactMessageInput">Message</label>
+            <textarea id="contactMessageInput" name="message" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <aside class="panel">
+          <div class="map-placeholder">Map Placeholder</div>
+          <p><strong>Email:</strong> hello@pawhome.org</p>
+          <p><strong>Phone:</strong> +1 (555) 123-9876</p>
+        </aside>
+      </div>
+      <p id="contactMessage" class="form-message" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>© 2026 PawHome</p></div></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
