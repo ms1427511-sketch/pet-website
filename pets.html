@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Available Pets | PawHome</title><link rel="stylesheet" href="css/style.css" /></head>
+<body data-page="pets">
+<header class="site-header"><nav class="navbar container"><a class="logo" href="index.html">PawHome</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="pets.html" class="active">Available Pets</a></li><li><a href="dogs.html">Dogs</a></li><li><a href="cats.html">Cats</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main class="section container listing-layout">
+<aside class="sidebar"><h2>Filters</h2><label>Pet Type<select id="filterType"><option value="all">All</option><option value="Dog">Dog</option><option value="Cat">Cat</option></select></label><label>Age<select id="filterAge"><option value="all">All</option><option value="Puppy/Kitten">Puppy/Kitten (0-1)</option><option value="Young">Young (1-3)</option><option value="Adult">Adult (4+)</option></select></label><label>Gender<select id="filterGender"><option value="all">All</option><option value="Male">Male</option><option value="Female">Female</option></select></label></aside>
+<section><h1>Available Pets</h1><p id="resultCount"></p><div id="petGrid" class="pet-grid"></div><p id="emptyState" class="hidden">No results found. Try different filters.</p></section>
+</main>
+<footer class="site-footer"><p>© 2026 PawHome</p></footer><script src="js/script.js"></script>
+</body></html>
