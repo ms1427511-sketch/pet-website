@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawHome | Adoption Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="adoption">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">PawHome</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="process.html">Adoption Process</a></li>
+            <li><a href="adoption.html" class="active">Adoption Form</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h1>Adoption Application</h1>
+      <form id="adoptionForm" class="form-grid" novalidate>
+        <div>
+          <label for="adoptName">Full Name</label>
+          <input id="adoptName" name="fullName" type="text" required />
+        </div>
+        <div>
+          <label for="adoptEmail">Email</label>
+          <input id="adoptEmail" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="adoptPhone">Phone</label>
+          <input id="adoptPhone" name="phone" type="tel" required />
+        </div>
+        <div>
+          <label for="adoptAddress">Address</label>
+          <input id="adoptAddress" name="address" type="text" required />
+        </div>
+        <div>
+          <label for="adoptHousing">Type of Housing</label>
+          <input id="adoptHousing" name="housing" type="text" required />
+        </div>
+        <div>
+          <label for="adoptOtherPets">Other Pets (Yes/No)</label>
+          <select id="adoptOtherPets" name="otherPets" required>
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="full-width">
+          <label for="adoptReason">Reason for adoption</label>
+          <textarea id="adoptReason" name="reason" required></textarea>
+        </div>
+        <button class="btn" type="submit">Submit Application</button>
+      </form>
+      <p id="adoptionMessage" class="form-message" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>© 2026 PawHome</p></div></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
